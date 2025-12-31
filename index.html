@@ -30,7 +30,7 @@
                     <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
                     <li class="nav-item">
-                        <button class="btn btn-primary ms-2">Comprar</button>
+                        <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#contactoModal">Comprar</button>
                     </li>
                 </ul>
             </div>
@@ -180,5 +180,43 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 SonicPulse. Todos los derechos reservados.</p>
+            <p class="small text-muted">Actividad 3.8 - Desarrollo de Interfaces Web</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="contactoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Reserva tus SonicPulse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="emailUser" class="form-label">Tu Correo Electrónico</label>
+                            <input type="email" class="form-control" id="emailUser" placeholder="nombre@ejemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="colorSelect" class="form-label">Elige un color</label>
+                            <select class="form-select" id="colorSelect">
+                                <option>Negro Mate</option>
+                                <option>Blanco Nieve</option>
+                                <option>Azul Neón</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Enviar Reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
