@@ -1,0 +1,47 @@
+:root {
+    --color-principal: #6610f2; 
+    --color-hover: #520dc2;     
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.text-primary {
+    color: var(--color-principal) !important;
+}
+
+.btn-primary {
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
+    font-weight: 600; 
+    padding: 10px 25px; 
+    transition: all 0.3s ease; 
+}
+
+.btn-primary:hover {
+    background-color: var(--color-hover);
+    border-color: var(--color-hover);
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 15px rgba(102, 16, 242, 0.4); 
+}
+
+
+.carousel-item img {
+    filter: brightness(0.6);
+}
+
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03); 
+}
+
+.navbar-brand {
+    color: var(--color-principal) !important; 
+    font-size: 1.5rem;
+}
